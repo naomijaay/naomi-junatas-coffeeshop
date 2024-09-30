@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin: 0;
+}
+
+.nav {
+    background-color: #fff0ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+    &__logo-title {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 200;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &--highlighted {
+            color: #5BACC3;
+        }
+    }
+}

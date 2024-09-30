@@ -1,0 +1,213 @@
+
+@use "./partials/_global.scss" as *;
+
+
+.container1 {
+    background-color: #FFF0ED;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+
+    &--left {
+        word-wrap: break-word;
+        max-width: 350px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &--left__title {
+        margin: 0;
+    }
+
+    &__inner-button { 
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+    }
+}
+
+.container2 {
+    text-align: center;
+    background-color: #f7f7f7;
+
+    &__inner-button { 
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+    }
+
+    &--product {
+        display: inline-block; /* allows images to sit next to each other horizontally */
+        vertical-align: top; /* controls how elements align vertically */
+        width: 20.625rem; 
+        height: 27.5rem;
+        margin: 1.25rem;
+        text-align: center;
+        padding-left: 1rem;
+        border-radius: 0.625rem; /* rounds corners of element */
+        box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+        background-color: white;
+
+        &__image {
+            height: 13rem;
+            padding-top: 2rem;
+        }
+
+        &__info {
+            text-align: left;
+            padding-left: 1rem;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+    }
+
+    &--right {
+        background-image: url("../assets/coldbrewbackground.png");
+        border: none;
+        color: white;
+        padding: 4rem 7rem;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        background-size: 150%; /* Zoom out by setting the size larger than 100% */
+        background-repeat: no-repeat;
+
+        &__image-inner {
+            border: 5px solid #5BACC3;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: -16px;
+            left: -16px;
+        }
+    }
+}
+
+.container3 {
+    background-color: #FFF;
+    padding: 0 5rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; 
+
+    &--left {
+        word-wrap: break-word;
+        max-width: 430px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--left__title {
+        margin: 0;
+    }
+
+    &--left__image {
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+        gap: 2rem;
+        margin-top: 1rem;
+
+        &__type {
+            width: 10%;
+            height: auto;
+            margin: 0 52px;
+        }
+    }
+
+    &--left__button-text {
+        margin-top: 2rem;
+    }
+
+    &__inner-button { 
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+    }
+}
+
+.container4 {
+    background-color: #393939;
+    color: white;
+    text-align: center;
+    font-size: 2.813rem;
+    line-height: 1.25rem;
+    width: 90%;
+    height: 6rem;
+    padding-top: 0.20rem;
+    padding-bottom: 0.20rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--left__button {
+        background-color: #f7f7f7;
+        padding-bottom: 2.5rem;
+        padding-top: 1.25rem;
+        text-align: center;
+    }
+}
+
+.container5 {
+    background-color: #FFF0ED;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+
+    &__socials--image__type {
+        width: 3.125rem;
+    }
+
+    &__address,
+    &__hours,
+    &__socials {
+        width: calc(33.33% - 2.5rem);
+    }
+}
+
+.price {
+    color: #5BACC3;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.pack-size {
+    color: #909090;
+    font-size: 1rem;
+}
+
+.pack-size, .price, h3 {
+    text-align: left;
+    margin-left: 0;
+    justify-content: flex-start;
+    margin: 0.5rem;
+}
+
+h1, h2 {
+    font-weight: lighter;
+    font-size: 3.75rem;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 2.06rem;
+}
